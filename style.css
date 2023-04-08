@@ -1,0 +1,24 @@
+#game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-image: url('mole.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.hole.up {
+    background-position-y: -100px;
+}
+
+.hole.hit {
+    background-position-y: -200px;
+}
